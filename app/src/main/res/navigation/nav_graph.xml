@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/arthas">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.magiclibrary.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_menu"
+            app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_login_to_registro"
+            app:destination="@id/registro" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.magiclibrary.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_ticket"
+            app:destination="@id/ticket" />
+        <action
+            android:id="@+id/action_menu_to_ajustes"
+            app:destination="@id/ajustes" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.magiclibrary.Registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registro_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticket"
+        android:name="com.example.magiclibrary.ticket"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" />
+    <fragment
+        android:id="@+id/ajustes"
+        android:name="com.example.magiclibrary.ajustes"
+        android:label="fragment_ajustes"
+        tools:layout="@layout/fragment_ajustes" >
+        <action
+            android:id="@+id/action_ajustes_to_acerca"
+            app:destination="@id/acerca" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.magiclibrary.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/acerca"
+        android:name="com.example.magiclibrary.acerca"
+        android:label="fragment_acerca"
+        tools:layout="@layout/fragment_acerca" />
+    <fragment
+        android:id="@+id/theshattering"
+        android:name="com.example.magiclibrary.theshattering"
+        android:label="fragment_theshattering"
+        tools:layout="@layout/fragment_theshattering" />
+    <fragment
+        android:id="@+id/arthas"
+        android:name="com.example.magiclibrary.arthas"
+        android:label="fragment_arthas"
+        tools:layout="@layout/fragment_arthas" />
+    <fragment
+        android:id="@+id/voljin"
+        android:name="com.example.magiclibrary.voljin"
+        android:label="fragment_voljin"
+        tools:layout="@layout/fragment_voljin" />
+</navigation>
