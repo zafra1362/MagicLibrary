@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".leerarthas"
+    android:background="@drawable/horda">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aquel rugido profundo se elevó como el humo, y aunque si bien no era un mensaje
+articulado en palabras, este repleto de significado. En realidad, se trataba de un cántico en el
+que participaban varias voces. El sonido de los tambores, matracas y del hueso al frotar
+contra el hueso conformaban un acompañamiento intenso para aquella llamada sin palabras.
+Un círculo de postes y pieles evitaba que aquel viento iracundo azotara la aldea taunka;
+asimismo, sus cabañas de techos curvados, que formaban un arco sobre aquel espacio interior
+tan amplio desafiando las inclemencias de aquella tierra, eran muy resistentes.
+Por encima de los sonidos de aquel ritual antiguo de gran trascendencia, el aullido del
+viento todavía se podía escuchar. El taunka que danzaba, un chamán llamado Kamiku, se
+equivocó en un paso y su pezuña impactó contra el suelo de una forma un tanto extraña. Pero
+recuperó el equilibrio y continuó bailando. Debía concentrarse. Todo era cuestión de
+concentración. Era así como uno doblegaba los elementos para que le obedecieran; era así
+como su pueblo había sobrevivido en una tierra hostil e inmisericorde.
+El sudor empapaba y oscurecía su pelaje mientras danzaba. Tenía los enormes ojos
+castaños cerrados para poder concentrarse mejor y las pezuñas volvieron a retomar aquel
+enérgico ritmo. Movió bruscamente la cabeza, de modo que los cuernos cortos hendieron el
+aire, y agitó nervioso la cola. Otros taunkas bailaban junto a él. Su calor corporal y el que les
+proporcionaba aquel fuego, que ardía con fuerza a pesar de que los copos de nieve y el viento
+entraban por la abertura del techo por donde salía el humo, lograban que la acogedora cabaña
+mantuviera una buena temperatura.
+Todos sabían que ocurría allá fuera. No podían controlar ese viento y esa nieve, como
+solían hacer en otras ocasiones con fenómenos similares. No, porque eran cosa de él. Pero sí
+podían danzar, comer y reír desafiando a esa violenta tormenta. Eran taunkas; lo resistirían.
+
+En el exterior el mundo era de color azul y blanco y bramaba furioso, pero dentro de la
+Gran Sala hacía una buena temperatura y todo se hallaba en calma. Allí había una chimenea
+lo bastante alta para que un hombre pudiera estar de pie dentro de ella, repleta de gruesos
+leños que crepitaban al arder; ése era el único ruido que se escuchaba en la sala. Sobre la
+recargada repisa de la chimenea decorada con imágenes talladas de criaturas fantásticas se
+
+
+hallaba expuesto un cuerno gigante de colmipala.Unas cabezas de dragones esculpidas
+hacían las veces de soportes para las antorchas, cuyas llamas brillaban intensamente. Unas
+vigas fuertes y enormes sostenían el peso de un salón de banquetes que podría haber
+albergado a muchos invitados, donde el color cálido y anaranjado del fuego ahuyentaba las
+sombras que corrían a esconderse en las esquinas. El suelo de fría piedra adquiría un carácter
+más agradable y acogedor gracias a las gruesas pieles de osos, colmipala y otras criaturas que
+lo alfombraban.Una mesa larga, muy pesada y de madera tallada ocupaba casi todo el espacio de la
+habitación. Donde podrían haberse alojado unos cuarenta invitados con suma facilidad.
+Aunque sólo tres seres se hallaban sentados a la mesa en aquel momento: un hombre, un orco
+y un muchacho."
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/arthas">
+    app:startDestination="@id/leerarthas">
 
     <fragment
         android:id="@+id/login"
@@ -66,15 +66,42 @@
         android:id="@+id/theshattering"
         android:name="com.example.magiclibrary.theshattering"
         android:label="fragment_theshattering"
-        tools:layout="@layout/fragment_theshattering" />
+        tools:layout="@layout/fragment_theshattering" >
+        <action
+            android:id="@+id/action_theshattering_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
     <fragment
         android:id="@+id/arthas"
         android:name="com.example.magiclibrary.arthas"
         android:label="fragment_arthas"
-        tools:layout="@layout/fragment_arthas" />
+        tools:layout="@layout/fragment_arthas" >
+        <action
+            android:id="@+id/action_arthas_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
     <fragment
         android:id="@+id/voljin"
         android:name="com.example.magiclibrary.voljin"
         android:label="fragment_voljin"
-        tools:layout="@layout/fragment_voljin" />
+        tools:layout="@layout/fragment_voljin" >
+        <action
+            android:id="@+id/action_voljin_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/leerarthas"
+        android:name="com.example.magiclibrary.leerarthas"
+        android:label="fragment_leerarthas"
+        tools:layout="@layout/fragment_leerarthas" />
+    <fragment
+        android:id="@+id/leertheshattering"
+        android:name="com.example.magiclibrary.leertheshattering"
+        android:label="fragment_leertheshattering"
+        tools:layout="@layout/fragment_leertheshattering" />
+    <fragment
+        android:id="@+id/leervoljin"
+        android:name="com.example.magiclibrary.leervoljin"
+        android:label="fragment_leervoljin"
+        tools:layout="@layout/fragment_leervoljin" />
 </navigation>
