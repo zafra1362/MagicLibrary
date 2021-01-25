@@ -41,6 +41,7 @@
         android:background="@drawable/rectangle"
         android:ems="10"
         android:hint="    Email"
+
         android:inputType="textEmailAddress"
         android:paddingVertical="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +59,8 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/rectangle"
         android:ems="10"
-        android:hint="    Email"
-        android:inputType="textEmailAddress"
+        android:hint="    Contraseña"
+        android:inputType="textPassword"
         android:paddingVertical="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"

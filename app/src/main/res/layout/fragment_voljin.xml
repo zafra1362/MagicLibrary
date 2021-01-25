@@ -87,8 +87,9 @@
 
     <TextView
         android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="335dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="https://www.amazon.es/World-Warcraft-Voljin-Shadows-Horde/dp/1476702977"
         android:textColor="@color/white"
@@ -113,14 +114,15 @@
 
     <TextView
         android:id="@+id/textView35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="334dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="La huelga asesinos del Jefe de Guerra Garrosh a Vol'jin, lo ha dejado al borde de la muerte. Pero el destino le sonríe al herido líder Darkspear, el famoso maestro cervecero Chen Stormstout le transporta a la seguridad de un monasterio de la montaña aislada."
         android:textColor="@color/white"
         android:textSize="13dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
@@ -128,7 +130,6 @@
         android:id="@+id/button9"
         android:layout_width="260dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
