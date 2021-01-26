@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/registro">
+    app:startDestination="@id/menu">
 
     <fragment
         android:id="@+id/login"
@@ -37,6 +37,12 @@
         <action
             android:id="@+id/action_menu_to_voljin"
             app:destination="@id/voljin" />
+        <action
+            android:id="@+id/action_menu_to_ticket2"
+            app:destination="@id/ticket" />
+        <action
+            android:id="@+id/action_menu_to_ajustes2"
+            app:destination="@id/ajustes" />
     </fragment>
     <fragment
         android:id="@+id/registro"
@@ -51,7 +57,17 @@
         android:id="@+id/ticket"
         android:name="com.example.magiclibrary.ticket"
         android:label="fragment_ticket"
-        tools:layout="@layout/fragment_ticket" />
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticket_to_ajustes"
+            app:destination="@id/ajustes" />
+        <action
+            android:id="@+id/action_ticket_to_ajustes2"
+            app:destination="@id/ajustes" />
+        <action
+            android:id="@+id/action_ticket_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
     <fragment
         android:id="@+id/ajustes"
         android:name="com.example.magiclibrary.ajustes"
@@ -70,7 +86,17 @@
         android:id="@+id/acerca"
         android:name="com.example.magiclibrary.acerca"
         android:label="fragment_acerca"
-        tools:layout="@layout/fragment_acerca" />
+        tools:layout="@layout/fragment_acerca" >
+        <action
+            android:id="@+id/action_acerca_to_ajustes"
+            app:destination="@id/ajustes" />
+        <action
+            android:id="@+id/action_acerca_to_menu"
+            app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_acerca_to_ticket"
+            app:destination="@id/ticket" />
+    </fragment>
     <fragment
         android:id="@+id/theshattering"
         android:name="com.example.magiclibrary.theshattering"
@@ -79,6 +105,12 @@
         <action
             android:id="@+id/action_theshattering_to_menu"
             app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_theshattering_to_ajustes"
+            app:destination="@id/ajustes" />
+        <action
+            android:id="@+id/action_theshattering_to_ticket"
+            app:destination="@id/ticket" />
     </fragment>
     <fragment
         android:id="@+id/arthas"
@@ -88,6 +120,12 @@
         <action
             android:id="@+id/action_arthas_to_menu"
             app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_arthas_to_ajustes"
+            app:destination="@id/ajustes" />
+        <action
+            android:id="@+id/action_arthas_to_ticket"
+            app:destination="@id/ticket" />
     </fragment>
     <fragment
         android:id="@+id/voljin"
@@ -97,20 +135,41 @@
         <action
             android:id="@+id/action_voljin_to_menu"
             app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_voljin_to_ajustes"
+            app:destination="@id/ajustes" />
+        <action
+            android:id="@+id/action_voljin_to_ticket"
+            app:destination="@id/ticket" />
+        <action
+            android:id="@+id/action_voljin_to_menu2"
+            app:destination="@id/menu" />
     </fragment>
     <fragment
         android:id="@+id/leerarthas"
         android:name="com.example.magiclibrary.leerarthas"
         android:label="fragment_leerarthas"
-        tools:layout="@layout/fragment_leerarthas" />
+        tools:layout="@layout/fragment_leerarthas" >
+        <action
+            android:id="@+id/action_leerarthas_to_arthas"
+            app:destination="@id/arthas" />
+    </fragment>
     <fragment
         android:id="@+id/leertheshattering"
         android:name="com.example.magiclibrary.leertheshattering"
         android:label="fragment_leertheshattering"
-        tools:layout="@layout/fragment_leertheshattering" />
+        tools:layout="@layout/fragment_leertheshattering" >
+        <action
+            android:id="@+id/action_leertheshattering_to_theshattering"
+            app:destination="@id/theshattering" />
+    </fragment>
     <fragment
         android:id="@+id/leervoljin"
         android:name="com.example.magiclibrary.leervoljin"
         android:label="fragment_leervoljin"
-        tools:layout="@layout/fragment_leervoljin" />
+        tools:layout="@layout/fragment_leervoljin" >
+        <action
+            android:id="@+id/action_leervoljin_to_voljin"
+            app:destination="@id/voljin" />
+    </fragment>
 </navigation>

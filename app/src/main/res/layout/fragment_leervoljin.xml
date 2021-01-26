@@ -3,12 +3,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".leervoljin">
+    tools:context=".leervoljin"
+    android:background="@drawable/horda">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="19dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The slender girl somehow surfaced from amid a boiling sea of black and white
+fur. “Perfectly well, Uncle Chen!” The frustration in her eyes belied her words. She
+reached down, plucked one scrawny boy from the pack, and tossed him aside, then
+disappeared beneath a wave of shrieking cubs.
+Chen thought to step in but hesitated. Li Li was in no real danger and she was a
+strong-willed girl. If she needed help, she’d ask for it eventually. To intervene be-
+fore that would make her think he doubted she could take care of herself. She’d
+sulk for a bit, and he just hated when she did that. She’d also be outraged and then
+would go do something to prove she could take care of herself, and that might land
+her in even greater trouble.
+Though that was his primary line of reasoning, the whispers and tutting from
+the two Chiang sisters gave him further cause to hold back. The two of them were
+old enough to remember when Liu Lang had first departed Pandaria—or so they
+said. Though their fur ran much more to white than black, save where they dark-
+ened it around their eyes, Chen assumed they weren’t quite that old. They’d spent
+all their lives in Pandaria, and very little of them in the company of those who had
+lived on the Wandering Isle. They’d developed opinions of those who “chased the
+turtle,” and Chen had taken a delight in confounding them by acting against type.
+Li Li, in their eyes, was purely one of the turtle’s wild dogs. Impulsive and prac-
+tical, quick to action and a bit prone to overestimation of her own abilities, Li Li
+was a fine example of a pandaren accepting the philosophy of Huojin.Chen, were he of a nature to dislike things, certainly would dislike the Chiang
+sisters. He’d actually taken a liking to them. In addition to fixing up the Stormstout
+Brewery and concocting fantastic beverages, he’d wandered Pandaria to learn more
+about the place he’d determined would be his home. He’d seen them, two maiden
+sisters, struggling with a small garden patch that had gone untended during the
+yaungol siege, and had offered to help.
+They’d not so much as replied to him, but he’d pitched in anyway. He repaired
+fences and weeded. He laid down new stones for the path to their door. He enter-
+tained their great-grandcubs by breathing fire. He swept, hauled water, and piled
+up firewood. He did that under their disapproving stares and only because, be-
+neath it all, he read disbelief in their eyes.
+He’d worked long and hard without their speaking a word to him before he first
+heard their voices. They didn’t speak to him or with him or even really at him. They
+spoke toward him while speaking to each other. The elder had said, “It is the sort
+of day that tiger gourami would be nice.” The younger merely nodded.
+Chen knew it was a command, and he complied. He did so carefully. He fished
+three gourami out of the ocean. The first fish he threw back. The last one he kept
+for the sisters, and the largest he gave to a refugee fishwife and her five cubs be-
+cause her husband was still one of the missing."
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </FrameLayout>

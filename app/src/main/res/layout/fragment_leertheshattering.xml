@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".leertheshattering">
+    tools:context=".leertheshattering"
+    android:background="@drawable/horda">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,6 +16,55 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A few moments later the waters began to churn, surging angrily now at the foot
+of the mountain. The waves grew high, hungry, as if something dark and dreadful
+stirred beneath their crashing surface. Even on the mountain, Drek’Thar knew he
+was not safe, knew nothing was safe, not anymore, and he could feel the once-solid
+stone shuddering beneath his bare feet. His fingers curled tightly, painfully, about
+his staff, as if somehow its gnarled length would stay stable and secure despite a
+roiling ocean and a crumbling mountain.
+And then, with no warning, it happened.
+A fissure zigzagged along the earth beneath him. Roaring, he half-leaped, half-
+fell out of the way as it opened like a mouth attempting to devour him. He lost his
+hold on his staff, and it fell into the widening maw. As the wind whipped up,
+Drek’Thar clung to an upthrust shard of rock and, trembling as the earth trembled,
+peered with eyes that had not seen in far too long at the blood-red, boiling ocean
+beneath.
+Huge waves crashed against the sheer wall of the mountain cliff, and Drek’Thar
+could feel the blistering spray as they surged impossibly high. From all around him
+came the screams of the elements, frightened, tormented, calling out for aid. The
+rumbling increased, and before his terrified gaze a massive chunk of earth broke
+the surface of the red ocean, rising, rising seemingly without cease, becoming a
+mountain itself, a continent, even as the land upon which Drek’Thar stood cracked
+open yet again, and he fell into the fissure, crying aloud and clutching at air, falling
+into fire—“The land will weep, and the world will break!” he shrieked. Something solid
+touched his flailing hands, enclosed them, stilled them. He knew that touch. It was
+Palkar, the orc who had attended him for several years.
+“Come now, Greatfather Drek’Thar, it is only a dream,” the young orc chided.
+But Drek’Thar would not be brushed aside, not with the vision he had had. He
+had fought in Alterac Valley not so long ago, until he had been deemed too old and
+weak to serve in that capacity. If he could not serve there any longer, he would
+serve with his shamanic skills. His visions.
+“Palkar, I must speak with Thrall,” he demanded. “And the Earthen Ring. Per-
+haps others have seen what I have … and if they have not, I must tell them! Palkar, I
+must!” He attempted to rise. One of his legs gave way beneath him. Frustrated, he
+pounded at his betraying, aging body.
+“What you must do is get some sleep, Greatfather.” Drek’Thar was weak, and
+struggle as he might, he could not offer sufficient resistance to escape Palkar’s
+steady hands pushing him back on the sleeping skins.
+“Thrall … he must know,” muttered Drek’Thar, slapping ineffectually at Palkar’s
+arms.“If you feel it necessary, tomorrow we will go and tell him. But now … rest.”
+Exhausted from the dream, and feeling the cold in his aged bones afresh,
+Drek’Thar nodded and permitted Palkar to prepare him a hot drink with herbs that
+would send him into a peaceful sleep. Palkar was a good caretaker, he thought, his
+mind already wandering again. If Palkar thought tomorrow would be soon enough,
+then it would be. After he finished the drink, he laid his head down, and before
+sleep claimed him, wondered driftingly, Soon enough for what?"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
