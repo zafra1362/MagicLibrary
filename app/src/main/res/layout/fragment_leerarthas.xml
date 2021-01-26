@@ -6,16 +6,11 @@
     tools:context=".leerarthas"
     android:background="@drawable/horda">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
@@ -64,8 +59,9 @@ lo alfombraban.Una mesa larga, muy pesada y de madera tallada ocupaba casi todo 
 habitación. Donde podrían haberse alojado unos cuarenta invitados con suma facilidad.
 Aunque sólo tres seres se hallaban sentados a la mesa en aquel momento: un hombre, un orco
 y un muchacho."
-                android:textColor="@color/white" />
-        </LinearLayout>
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

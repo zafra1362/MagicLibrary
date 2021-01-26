@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menu_fav"
-        android:title="Favorito"
-        android:icon="@drawable/fav" />
+    <item android:id="@+id/menu_info"
+        android:title="Info."
+        android:icon="@drawable/info_circle" />
+
+    <item android:id="@+id/menu_home"
+        android:title="Inicio"
+        android:icon="@drawable/home_alt_fill" />
 
     <item android:id="@+id/menu_ticket"
         android:title="Ticket"
         android:icon="@drawable/ticket" />
-
-    <item android:id="@+id/menu_ajustes"
-        android:title="Ajustes"
-        android:icon="@drawable/settings" />
 
 
 </menu>

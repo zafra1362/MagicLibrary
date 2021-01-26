@@ -7,6 +7,16 @@
     tools:context=".theshattering"
     android:background="@drawable/hs">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="19dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
     <TextView
         android:id="@+id/textView8"
@@ -133,13 +143,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/shatteringbutton"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:text="Button"
+        android:text="MUESTRA"
+        android:backgroundTint="@color/maroon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
