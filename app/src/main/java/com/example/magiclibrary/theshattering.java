@@ -32,7 +32,7 @@ public class theshattering extends Fragment {
         NavController navController = Navigation.findNavController(view);
 
         binding.shatteringbutton.setOnClickListener(v ->
-                navController.navigate(R.id.leertheshattering));
+                navController.navigate(R.id.action_theshattering_to_leertheshattering));
 
     }
 }

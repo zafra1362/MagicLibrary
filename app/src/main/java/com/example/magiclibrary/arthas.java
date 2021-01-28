@@ -32,7 +32,7 @@ public class arthas extends Fragment {
         NavController navController = Navigation.findNavController(view);
 
         binding.arthasbutton.setOnClickListener(v ->
-                navController.navigate(R.id.leerarthas));
+                navController.navigate(R.id.action_arthas_to_leerarthas));
 
     }
 }

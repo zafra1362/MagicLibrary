@@ -32,7 +32,7 @@ public class ajustes extends Fragment {
         NavController navController = Navigation.findNavController(view);
 
         binding.acercabutton.setOnClickListener(v ->
-                navController.navigate(R.id.acerca));
+                navController.navigate(R.id.action_ajustes_to_acerca));
 
     }
 }

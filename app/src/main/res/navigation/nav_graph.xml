@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/menu">
+    app:startDestination="@id/login">
 
     <fragment
         android:id="@+id/login"
@@ -12,10 +12,14 @@
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_login_to_menu"
-            app:destination="@id/menu" />
+            app:destination="@id/menu"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top" />
         <action
             android:id="@+id/action_login_to_registro"
-            app:destination="@id/registro" />
+            app:destination="@id/registro"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/menu"
@@ -23,26 +27,20 @@
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
-            android:id="@+id/action_menu_to_ticket"
-            app:destination="@id/ticket" />
-        <action
-            android:id="@+id/action_menu_to_ajustes"
-            app:destination="@id/ajustes" />
-        <action
             android:id="@+id/action_menu_to_arthas"
-            app:destination="@id/arthas" />
+            app:destination="@id/arthas"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_menu_to_theshattering"
-            app:destination="@id/theshattering" />
+            app:destination="@id/theshattering"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
         <action
             android:id="@+id/action_menu_to_voljin"
-            app:destination="@id/voljin" />
-        <action
-            android:id="@+id/action_menu_to_ticket2"
-            app:destination="@id/ticket" />
-        <action
-            android:id="@+id/action_menu_to_ajustes2"
-            app:destination="@id/ajustes" />
+            app:destination="@id/voljin"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/registro"
@@ -51,23 +49,15 @@
         tools:layout="@layout/fragment_registro" >
         <action
             android:id="@+id/action_registro_to_login"
-            app:destination="@id/login" />
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/ticket"
         android:name="com.example.magiclibrary.ticket"
         android:label="fragment_ticket"
-        tools:layout="@layout/fragment_ticket" >
-        <action
-            android:id="@+id/action_ticket_to_ajustes"
-            app:destination="@id/ajustes" />
-        <action
-            android:id="@+id/action_ticket_to_ajustes2"
-            app:destination="@id/ajustes" />
-        <action
-            android:id="@+id/action_ticket_to_menu"
-            app:destination="@id/menu" />
-    </fragment>
+        tools:layout="@layout/fragment_ticket" />
     <fragment
         android:id="@+id/ajustes"
         android:name="com.example.magiclibrary.ajustes"
@@ -75,7 +65,9 @@
         tools:layout="@layout/fragment_ajustes" >
         <action
             android:id="@+id/action_ajustes_to_acerca"
-            app:destination="@id/acerca" />
+            app:destination="@id/acerca"
+            app:enterAnim="@anim/slide_in_top"
+            app:exitAnim="@anim/slide_out_bottom" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
@@ -88,14 +80,8 @@
         android:label="fragment_acerca"
         tools:layout="@layout/fragment_acerca" >
         <action
-            android:id="@+id/action_acerca_to_ajustes"
-            app:destination="@id/ajustes" />
-        <action
             android:id="@+id/action_acerca_to_menu"
             app:destination="@id/menu" />
-        <action
-            android:id="@+id/action_acerca_to_ticket"
-            app:destination="@id/ticket" />
     </fragment>
     <fragment
         android:id="@+id/theshattering"
@@ -106,11 +92,10 @@
             android:id="@+id/action_theshattering_to_menu"
             app:destination="@id/menu" />
         <action
-            android:id="@+id/action_theshattering_to_ajustes"
-            app:destination="@id/ajustes" />
-        <action
-            android:id="@+id/action_theshattering_to_ticket"
-            app:destination="@id/ticket" />
+            android:id="@+id/action_theshattering_to_leertheshattering"
+            app:destination="@id/leertheshattering"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top" />
     </fragment>
     <fragment
         android:id="@+id/arthas"
@@ -121,11 +106,10 @@
             android:id="@+id/action_arthas_to_menu"
             app:destination="@id/menu" />
         <action
-            android:id="@+id/action_arthas_to_ajustes"
-            app:destination="@id/ajustes" />
-        <action
-            android:id="@+id/action_arthas_to_ticket"
-            app:destination="@id/ticket" />
+            android:id="@+id/action_arthas_to_leerarthas"
+            app:destination="@id/leerarthas"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top" />
     </fragment>
     <fragment
         android:id="@+id/voljin"
@@ -136,40 +120,27 @@
             android:id="@+id/action_voljin_to_menu"
             app:destination="@id/menu" />
         <action
-            android:id="@+id/action_voljin_to_ajustes"
-            app:destination="@id/ajustes" />
-        <action
-            android:id="@+id/action_voljin_to_ticket"
-            app:destination="@id/ticket" />
-        <action
             android:id="@+id/action_voljin_to_menu2"
             app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_voljin_to_leervoljin"
+            app:destination="@id/leervoljin"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top" />
     </fragment>
     <fragment
         android:id="@+id/leerarthas"
         android:name="com.example.magiclibrary.leerarthas"
         android:label="fragment_leerarthas"
-        tools:layout="@layout/fragment_leerarthas" >
-        <action
-            android:id="@+id/action_leerarthas_to_arthas"
-            app:destination="@id/arthas" />
-    </fragment>
+        tools:layout="@layout/fragment_leerarthas" />
     <fragment
         android:id="@+id/leertheshattering"
         android:name="com.example.magiclibrary.leertheshattering"
         android:label="fragment_leertheshattering"
-        tools:layout="@layout/fragment_leertheshattering" >
-        <action
-            android:id="@+id/action_leertheshattering_to_theshattering"
-            app:destination="@id/theshattering" />
-    </fragment>
+        tools:layout="@layout/fragment_leertheshattering" />
     <fragment
         android:id="@+id/leervoljin"
         android:name="com.example.magiclibrary.leervoljin"
         android:label="fragment_leervoljin"
-        tools:layout="@layout/fragment_leervoljin" >
-        <action
-            android:id="@+id/action_leervoljin_to_voljin"
-            app:destination="@id/voljin" />
-    </fragment>
+        tools:layout="@layout/fragment_leervoljin" />
 </navigation>

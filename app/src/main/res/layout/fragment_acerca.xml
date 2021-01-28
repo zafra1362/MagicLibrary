@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:text="¿Quien soy?"
-                android:textColor="@color/white"
+                android:textColor="#0040FF"
                 android:textSize="40dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -31,16 +31,47 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="¿Porque esta app?"
+                android:textAlignment="center"
+                android:textColor="#0040FF"
+                android:textSize="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.434"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="a"
+                android:text="Mi nombre es Dylan Zafra,tengo 19 años y actualmente estoy estudiando 2ndo año de Desarrollo de Aplicaciones multiplataforma."
                 android:textColor="@color/white"
+                android:textAlignment="center"
                 android:textSize="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Principalmente he creado esta app porque des de siempre me ha encantado jugar a videojuegos y uno de mis videojuegos favoritos es la famosa saga llamada World of Warcraft"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

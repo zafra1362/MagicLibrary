@@ -22,7 +22,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageButton
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#837517"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
                 android:id="@+id/arthas"
                 android:layout_width="162dp"
                 android:layout_height="251dp"
@@ -37,7 +45,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/shattering"
                 android:layout_width="162dp"
                 android:layout_height="251dp"
@@ -51,7 +59,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/voljin"
                 android:layout_width="162dp"
                 android:layout_height="251dp"

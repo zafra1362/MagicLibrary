@@ -33,7 +33,7 @@ public class voljin extends Fragment {
         NavController navController = Navigation.findNavController(view);
 
         binding.voljinbutton.setOnClickListener(v ->
-                navController.navigate(R.id.leervoljin));
+                navController.navigate(R.id.action_voljin_to_leervoljin));
 
     }
 }
