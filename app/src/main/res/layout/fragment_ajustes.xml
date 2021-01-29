@@ -17,12 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="51dp" />
 
     <Button
         android:id="@+id/acercabutton"
@@ -37,29 +31,48 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="300dp"
-        android:layout_height="105dp"
-        android:layout_marginTop="32dp"
-        android:text="Pagina del juego"
-        android:textSize="20dp"
-        android:backgroundTint="@color/gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acercabutton" />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="PÁGINA DEL JUEGO"
+                android:textColor="@color/white"
+                android:elevation="100dp"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acercabutton" />
 
-    <Button
-        android:id="@+id/button7"
+            <Button
+                android:id="@+id/paginabutton"
+                android:layout_width="300dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/gray"
+                android:text="https://worldofwarcraft.com/es-es/"
+                android:textColor="@color/gray"
+                android:autoLink="all"
+                android:clickable="true"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/acercabutton" />
+
+            <Button
+        android:id="@+id/valorarbutton"
         android:layout_width="300dp"
         android:layout_height="105dp"
         android:layout_marginTop="32dp"
-        android:text="redes sociales"
+        android:text="VALORAR"
         android:textSize="20dp"
         android:backgroundTint="#800000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/paginabutton" />
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

@@ -19,17 +19,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/loginbutton"
-        android:layout_width="314dp"
-        android:layout_height="57dp"
-        android:text="INICIAR SESIÓN"
-        android:backgroundTint="@color/red"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/loginbutton"
+                android:layout_width="314dp"
+                android:layout_height="57dp"
+                android:backgroundTint="#B61818"
+                android:text="INICIAR SESIÓN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox"
+                tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/registerbutton"
@@ -52,9 +52,9 @@
         android:background="@drawable/rectangle"
         android:ems="10"
         android:hint="Email"
+        android:paddingHorizontal="20dp"
         android:inputType="textEmailAddress"
         android:paddingVertical="20dp"
-        android:paddingHorizontal="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,9 +71,9 @@
         android:background="@drawable/rectangle"
         android:ems="10"
         android:hint="Contraseña"
+        android:paddingHorizontal="20dp"
         android:inputType="textPassword"
         android:paddingVertical="20dp"
-        android:paddingHorizontal="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"

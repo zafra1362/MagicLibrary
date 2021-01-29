@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,14 +13,23 @@
         tools:layout_editor_absoluteX="207dp"
         tools:layout_editor_absoluteY="19dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A few moments later the waters began to churn, surging angrily now at the foot
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/shatteringtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints" />
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A few moments later the waters began to churn, surging angrily now at the foot
 of the mountain. The waves grew high, hungry, as if something dark and dreadful
 stirred beneath their crashing surface. Even on the mountain, Drek’Thar knew he
 was not safe, knew nothing was safe, not anymore, and he could feel the once-solid
@@ -63,9 +73,15 @@ would send him into a peaceful sleep. Palkar was a good caretaker, he thought, h
 mind already wandering again. If Palkar thought tomorrow would be soon enough,
 then it would be. After he finished the drink, he laid his head down, and before
 sleep claimed him, wondered driftingly, Soon enough for what?"
-            android:textColor="@color/white"
-            tools:ignore="MissingConstraints" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:showTrimExpandedText="true"
+                app:trimLength="154"
+                app:trimMode="trimModeLine"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 </FrameLayout>

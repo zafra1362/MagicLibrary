@@ -118,6 +118,8 @@
         android:layout_marginTop="8dp"
         android:text="https://www.amazon.es/World-Warcraft-Shattering-Book-Cataclysm/dp/1439172749"
         android:textColor="@color/white"
+        android:autoLink="all"
+        android:clickable="true"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.39"

@@ -1,5 +1,7 @@
 package com.example.magiclibrary;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +16,7 @@ import android.view.ViewGroup;
 
 import com.example.magiclibrary.databinding.FragmentAjustesBinding;
 import com.example.magiclibrary.databinding.FragmentTheshatteringBinding;
+
 
 
 public class ajustes extends Fragment {
@@ -33,6 +36,7 @@ public class ajustes extends Fragment {
 
         binding.acercabutton.setOnClickListener(v ->
                 navController.navigate(R.id.action_ajustes_to_acerca));
-
+        binding.valorarbutton.setOnClickListener(v ->
+                navController.navigate(R.id.action_ajustes_to_rate));
     }
 }

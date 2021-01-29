@@ -20,17 +20,18 @@ public class arthas extends Fragment {
     private FragmentArthasBinding binding;
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return (binding = FragmentArthasBinding.inflate(inflater, container, false)).getRoot();
+
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         NavController navController = Navigation.findNavController(view);
-
         binding.arthasbutton.setOnClickListener(v ->
                 navController.navigate(R.id.action_arthas_to_leerarthas));
 

@@ -68,6 +68,9 @@
             app:destination="@id/acerca"
             app:enterAnim="@anim/slide_in_top"
             app:exitAnim="@anim/slide_out_bottom" />
+        <action
+            android:id="@+id/action_ajustes_to_rate"
+            app:destination="@id/rate" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
@@ -143,4 +146,9 @@
         android:name="com.example.magiclibrary.leervoljin"
         android:label="fragment_leervoljin"
         tools:layout="@layout/fragment_leervoljin" />
+    <fragment
+        android:id="@+id/rate"
+        android:name="com.example.magiclibrary.Rate"
+        android:label="fragment_rate"
+        tools:layout="@layout/fragment_rate" />
 </navigation>
