@@ -34,6 +34,7 @@ public class Rate extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         NavController navController = Navigation.findNavController(view);
 
-
+        binding.ratebutton.setOnClickListener(v ->
+                Toast.makeText(requireContext(), "¡Valoración enviada correctamente!", Toast.LENGTH_SHORT).show());
     }
 }

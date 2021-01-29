@@ -80,7 +80,7 @@ sleep claimed him, wondered driftingly, Soon enough for what?"
                 app:showTrimExpandedText="true"
                 app:trimLength="154"
                 app:trimMode="trimModeLine"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingClass,MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

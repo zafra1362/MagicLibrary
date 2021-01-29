@@ -68,7 +68,7 @@ cause her husband was still one of the missing."
                 app:showTrimExpandedText="true"
                 app:trimLength="154"
                 app:trimMode="trimModeLine"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingClass,MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
