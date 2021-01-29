@@ -5,19 +5,27 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bb1"
     tools:context=".Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bb1"
+        android:scaleType="centerCrop" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="19dp">
+        tools:layout_editor_absoluteY="19dp"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical" >
+
+
 
             <Button
                 android:id="@+id/loginbutton"
@@ -131,7 +139,7 @@
                 app:thub_circleGap="3dp"
                 app:thub_ringColor="#DDDDDD"
                 app:thub_ringStrokeWidth="2dp"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingClass,MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView3"

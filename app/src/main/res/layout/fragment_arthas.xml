@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".arthas"
-    android:background="@drawable/hs">
+    tools:context=".arthas">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hs"
+        android:scaleType="centerCrop" />
 
      <ScrollView
         android:layout_width="match_parent"

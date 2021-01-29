@@ -5,7 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".leerarthas"
-    android:background="@drawable/horda">
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/horda"
+        android:scaleType="centerCrop" />
 
     <ScrollView
         android:layout_width="match_parent"
