@@ -57,7 +57,13 @@
         android:id="@+id/ticket"
         android:name="com.example.magiclibrary.ticket"
         android:label="fragment_ticket"
-        tools:layout="@layout/fragment_ticket" />
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticket_to_ticketsend"
+            app:destination="@id/ticketsend"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
     <fragment
         android:id="@+id/ajustes"
         android:name="com.example.magiclibrary.ajustes"
@@ -155,5 +161,11 @@
         android:id="@+id/ticketsend"
         android:name="com.example.magiclibrary.Ticketsend"
         android:label="fragment_ticketsend"
-        tools:layout="@layout/fragment_ticketsend" />
+        tools:layout="@layout/fragment_ticketsend" >
+        <action
+            android:id="@+id/action_ticketsend_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top" />
+    </fragment>
 </navigation>
