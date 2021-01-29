@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,8 +16,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="wrap_content"
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/text_view"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Aquel rugido profundo se elevó como el humo, y aunque si bien no era un mensaje
 articulado en palabras, este repleto de significado. En realidad, se trataba de un cántico en el
@@ -60,6 +62,12 @@ habitación. Donde podrían haberse alojado unos cuarenta invitados con suma fac
 Aunque sólo tres seres se hallaban sentados a la mesa en aquel momento: un hombre, un orco
 y un muchacho."
                 android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:showTrimExpandedText="true"
+                app:trimLength="154"
+                app:trimMode="trimModeLine"
                 tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

@@ -28,7 +28,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.47"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox"
+                app:layout_constraintTop_toBottomOf="@+id/pulsar"
                 tools:ignore="MissingConstraints" />
 
     <Button
@@ -89,6 +89,7 @@
         android:layout_marginTop="60dp"
         android:gravity="top"
         android:text="Login"
+        android:textStyle="bold"
         android:textColor="@color/yellow"
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,6 +109,7 @@
         android:layout_marginEnd="32dp"
         android:gravity="top"
         android:text="Magic Library"
+        android:textStyle="bold"
         android:textColor="@color/yellow"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,16 +117,34 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="159dp"
-        android:layout_height="61dp"
-        android:text="Recordar datos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
-        tools:ignore="MissingConstraints" />
+            <com.aar.tapholdupbutton.TapHoldUpButton
+                android:id="@+id/pulsar"
+                android:layout_width="32dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.124"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+                app:thub_circleColor="#DDDDDD"
+                app:thub_circleColorOhHold="#FA1A1A"
+                app:thub_circleGap="3dp"
+                app:thub_ringColor="#DDDDDD"
+                app:thub_ringStrokeWidth="2dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Recordar contraseña"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toEndOf="@+id/pulsar"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

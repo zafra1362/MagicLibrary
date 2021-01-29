@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,8 +17,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-            <TextView
-                android:layout_width="wrap_content"
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:id="@+id/text_view"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="The slender girl somehow surfaced from amid a boiling sea of black and white
 fur. “Perfectly well, Uncle Chen!” The frustration in her eyes belied her words. She
@@ -59,6 +62,12 @@ three gourami out of the ocean. The first fish he threw back. The last one he ke
 for the sisters, and the largest he gave to a refugee fishwife and her five cubs be-
 cause her husband was still one of the missing."
                 android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:showTrimExpandedText="true"
+                app:trimLength="154"
+                app:trimMode="trimModeLine"
                 tools:ignore="MissingConstraints" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

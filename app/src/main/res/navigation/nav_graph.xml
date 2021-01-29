@@ -151,4 +151,9 @@
         android:name="com.example.magiclibrary.Rate"
         android:label="fragment_rate"
         tools:layout="@layout/fragment_rate" />
+    <fragment
+        android:id="@+id/ticketsend"
+        android:name="com.example.magiclibrary.Ticketsend"
+        android:label="fragment_ticketsend"
+        tools:layout="@layout/fragment_ticketsend" />
 </navigation>

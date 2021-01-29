@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
                 android:text="PÁGINA DEL JUEGO"
+                android:textStyle="bold"
                 android:textColor="@color/white"
                 android:elevation="100dp"
                 android:textSize="20dp"
